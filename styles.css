@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+.main-container {
+    height:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color:#28324b;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+section.left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #f65158;
+    border: 5px solid black;
+}
+section.middle {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: khaki;
+    border: 5px solid black;
+}
+section.right {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background: #01a4cd;
+    border: 5px solid black;
+}
+section h2{
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+section p {
+    font-size: 20px;
+    text-align: center;
+    padding:30px;
+    font-family: 'DotGothic16', sans-serif;
+}
+header h1 {
+    font-size: 45px;
+    color: lightgray;
+    font-family: 'Amatic SC', cursive;
+
+}
+@media (max-width: 600px) {
+    .main-container {
+        display:flex;
+        flex-direction: column;
+    }
+    header {
+        background-color: f6c049;
+    }
+    section.left {
+        background-color: #4cafac;
+    }
+    section.middle {
+        background-color: #ff2079;
+    }
+    section.right {
+        background-color: #e92efb;
+    }
+    header h1 {
+        color: black;
+        font-size: 20px;
+        padding:40px;
+        font-family: 'Staatliches', cursive;
+    }
+    section h2 {
+        padding: 10px;
+        font-family: 'Jura', sans-serif;
+    }
+    section p {
+        padding:15px;
+        font-family: 'Teko', sans-serif;
+    }
+}
